@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Illustration</title>
+  <style>
+    .container {
+      position: relative;
+      width: 800px; /* adjust as needed */
+      max-width: 100%;
+      margin: auto;
+    }
+    .overlay {
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="background.jpg" alt="Background" style="width:100%; display:block;">
+
+    <!-- Example overlay -->
+    <a href="https://carrd-page1.com" class="overlay" 
+       style="top:150px; left:200px; width:100px; height:200px;"
+       onmouseover="this.style.backgroundColor='rgba(0,0,0,0.4)';"
+       onmouseout="this.style.backgroundColor='rgba(0,0,0,0)';">
+    </a>
+
+    <!-- Add more overlays for other characters -->
+  </div>
+</body>
+</html>
